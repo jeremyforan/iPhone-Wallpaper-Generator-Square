@@ -1,10 +1,7 @@
 import random
-
 import square
 from typing import List
 import operator
-
-
 
 
 class Square:
@@ -110,7 +107,7 @@ class Box:
 def squares_to_fillable_retangles(sqr: Squares):
     boxes = []
 
-    for r_index in range(0 ,len(sqr.collection)-1):
+    for r_index in range(0, len(sqr.collection)-1):
         for c_index in range(0, len(sqr.collection[r_index])-1):
             boxes.append(
                 Box(
